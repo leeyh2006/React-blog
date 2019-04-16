@@ -1,0 +1,19 @@
+@import "../../../styles/utils";
+
+.post-body{
+  .paper {
+    padding: 2.5rem 2rem;
+    background: white;
+    @include material-shadow(4,0.5);
+    //위로 3rem 이동시켜주어 파란색 배경을 침범하게 합니다.
+    transform: translateY(-3rem);
+    margin: 0 auto;
+    min-height: 20rem;
+
+    width: 1024px;
+    @include media("<large"){
+      width: 768px;}
+    @include media("<medium"){width: calc(100% - 2rem);}
+
+  }
+}
