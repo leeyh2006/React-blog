@@ -1,4 +1,5 @@
-react 블로그 프로젝트 따라하기
+# First React blog project
 
-## tech Stack
+
+## Stack
 - react, react-redux
