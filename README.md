@@ -6,4 +6,4 @@
 
 
 
-### This project referred to the technique of dealing with book React.
+- This project referred to the technique of dealing with book React.
