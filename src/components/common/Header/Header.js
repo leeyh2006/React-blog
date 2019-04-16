@@ -6,13 +6,13 @@ import Button from "../Button";
 
 const cx =classNames.bind(styles);
 
-const Header = ({postId,onRemove}) =>(
+const Header = ({postId,onRemove,logged}) =>(
     <header className={cx('header')}>
         <div className={cx('header-content')}>
             <div className={cx('brand')}>
                 <Link to="/">Yong blog</Link>
             </div>
-            <div className={cx('right')}>
+            {logged && <div className={cx('right')}>
                 {
                     postId && [
                         <Button key="edit" theme="outline" to={`/editor?id=${postId}`}>수정</Button>
@@ -21,7 +21,7 @@ const Header = ({postId,onRemove}) =>(
                 }
                 <Button theme="outline" to="/editor">새포스트 </Button>
 
-            </div>
+            </div>}
         </div>
     </header>
 )
