@@ -2,7 +2,7 @@
 
 
 ## Stack
-- react, react-redux
+- react, react-redux,redux-pender
 
 
 
